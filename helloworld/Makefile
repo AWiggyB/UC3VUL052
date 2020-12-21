@@ -8,6 +8,8 @@ CFLAGS=
 
 all:
 	$(CC) $(CFLAGS) -o helloworld.bin helloworld.c
-
+	$(CC) $(CFLAGS) -o helloworld_newfunc.bin \
+			../../UC3VUL052_nonpublic/helloworld_newfunc.c
 clean:
 	rm helloworld.bin
+	rm helloworld_newfunc.bin
