@@ -12,4 +12,6 @@ all:
 			../../UC3VUL052_nonpublic/helloworld_newfunc.c
 clean:
 	rm helloworld.bin
-	rm helloworld_newfunc.bin
+
+	#Won't clean this one. Students can't compile it
+	#rm helloworld_newfunc.bin
