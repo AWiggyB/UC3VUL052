@@ -1,0 +1,41 @@
+12c12
+< Symbol table '.symtab' contains 64 entries:
+---
+> Symbol table '.symtab' contains 65 entries:
+29c29
+<     15: 00000000000011c4     0 SECTION LOCAL  DEFAULT   15 
+---
+>     15: 00000000000011d4     0 SECTION LOCAL  DEFAULT   15 
+32c32
+<     18: 0000000000002050     0 SECTION LOCAL  DEFAULT   18 
+---
+>     18: 0000000000002058     0 SECTION LOCAL  DEFAULT   18 
+49c49
+<     35: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS helloworld.c
+---
+>     35: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS helloworld_newfunc.c
+51c51
+<     37: 0000000000002154     0 OBJECT  LOCAL  DEFAULT   18 __FRAME_END__
+---
+>     37: 000000000000217c     0 OBJECT  LOCAL  DEFAULT   18 __FRAME_END__
+59c59
+<     45: 00000000000011c0     1 FUNC    GLOBAL DEFAULT   14 __libc_csu_fini
+---
+>     45: 00000000000011d0     1 FUNC    GLOBAL DEFAULT   14 __libc_csu_fini
+64c64
+<     50: 00000000000011c4     0 FUNC    GLOBAL HIDDEN    15 _fini
+---
+>     50: 00000000000011d4     0 FUNC    GLOBAL HIDDEN    15 _fini
+70c70
+<     56: 0000000000001160    93 FUNC    GLOBAL DEFAULT   14 __libc_csu_init
+---
+>     56: 0000000000001170    93 FUNC    GLOBAL DEFAULT   14 __libc_csu_init
+75,77c75,78
+<     61: 0000000000004030     0 OBJECT  GLOBAL HIDDEN    24 __TMC_END__
+<     62: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMC[...]
+<     63: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@@[...]
+---
+>     61: 0000000000001157    18 FUNC    GLOBAL DEFAULT   14 subtractor
+>     62: 0000000000004030     0 OBJECT  GLOBAL HIDDEN    24 __TMC_END__
+>     63: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMC[...]
+>     64: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@@[...]

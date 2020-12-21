@@ -10,8 +10,14 @@ all:
 	$(CC) $(CFLAGS) -o helloworld.bin helloworld.c
 	$(CC) $(CFLAGS) -o helloworld_newfunc.bin \
 			../../UC3VUL052_nonpublic/helloworld_newfunc.c
+
+	readelf --syms helloworld.bin > helloworld.txt
+	readelf --syms helloworld_newfunc.bin > helloworld_newfunc.txt
+	diff helloworld.txt helloworld_newfunc.txt > helloworld_newfunc.diff
+
+
 clean:
 	rm helloworld.bin
-
-	#Won't clean this one. Students can't compile it
-	#rm helloworld_newfunc.bin
+	rm helloworld.txt
+	rm helloworld_newfunc.txt
+	rm helloworld_newfunc.diff
