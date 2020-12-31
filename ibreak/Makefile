@@ -7,8 +7,7 @@ ASMFLAGS= -m32 -S
 CFLAGS=
 
 all:
-	$(CC) $(CFLAGS) -o ibreak.bin \
-			../../UC3VUL052_nonpublic/ibreak.c
+	$(CC) $(CFLAGS) -o ibreak.bin ibreak.c
 
 clean:
 	rm ibreak.bin
