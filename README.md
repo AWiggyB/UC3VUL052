@@ -1,2 +1,2 @@
 # UC3VUL052
-Code security tasks
+Code compile and basic binary analysis
