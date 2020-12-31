@@ -3,15 +3,7 @@
 
 int breakatthirteen(char *str){
 	char buffer[13]; // This buffer is 13 bytes long
-	strcpy(buffer,str);
-/*
-	if (strcpy(buffer,str)) {
-		printf("\n String didn't overflow the buffer\n");
-	}
-	else{
-		printf("\n String overflow. This will never show up");
-	}
-*/
+	strcpy(buffer,str); // Breaks if input is larger than the buffer size
 }
 
 int main(int argc, char *argv[]){
