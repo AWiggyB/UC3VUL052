@@ -2,7 +2,7 @@
 #include<string.h>
 
 int breakatthirteen(char *str){
-	char buffer[13];
+	char buffer[13]; // This buffer is 13 bytes long
 	strcpy(buffer,str);
 /*
 	if (strcpy(buffer,str)) {
